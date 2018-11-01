@@ -28,12 +28,12 @@ dependencies {
 }
 jar {
     manifest {
-        attributes 'Main-Class': 'ohtu.main.Main'
+        attributes 'Main-Class': 'main.Main'
     }
 }
 
 // Define the main class for the application
-mainClassName = 'ohtu.main.Main'
+mainClassName = 'main.Main'
 apply plugin: "jacoco"
 
 jacocoTestReport {
@@ -44,7 +44,7 @@ jacocoTestReport {
     afterEvaluate {
         classDirectories = files(classDirectories.files.collect {
             fileTree(dir: it,
-                    exclude: ['ohtu.main/**'])
+                    exclude: ['main/**'])
         })
     }
 }
