@@ -37,7 +37,7 @@ public class VarastoTest {
     
     @Test
     public void konstruktoriLuoVarastonSaldolla() {
-        assertEquals(2, luontiSaldolla.getSaldo(), vertailuTarkkuus);
+        assertEquals(10, luontiSaldolla.getSaldo(), vertailuTarkkuus);
     }
     @Test
     public void KonstruktorimukauttaaSaldonTilavuuteen() {
