@@ -26,7 +26,12 @@ dependencies {
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
 }
+jar {
+    manifest {
+        attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
+    }
+}
 
 // Define the main class for the application
 mainClassName = 'ohtu.ohtuvarasto.Main'
-
+apply plugin: "jacoco"
