@@ -23,9 +23,9 @@ import static org.junit.Assert.*;
  * @author kape
  */
 public class StatisticsTest {
-    ArrayList<Player> players;
+    private ArrayList<Player> players;
     
-    Reader readerStub=() -> {
+    private Reader readerStub=() -> {
         players = new ArrayList<>();
         
         players.add(new Player("Semenko", "EDM", 4, 12));
